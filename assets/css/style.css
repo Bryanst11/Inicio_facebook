@@ -17,10 +17,15 @@
 }
 
 .contenedor{
+    margin: 32px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     /* repeat(cantidad, tamaño) */
+    grid-column-gap: 32px;
+}
 
+.seccion1{
+    font-size: 28px;
 }
 
 .formulario{
@@ -28,7 +33,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.formulario input{
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
 }
 
 .btn-inicio-sesion{
@@ -45,4 +57,16 @@
 
 .btn-inicio-sesion:hover{
     background-color: var(--color-azul-facebook-hover);
+}
+
+.btn-crear{
+    background-color: var(--color-verde-facebook);
+    color: var(--color-blanco);
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 43px;
+    padding: 0 24px;
+    border-radius: 6px;
+    border: none;
+    transition: all .5s;
 }
