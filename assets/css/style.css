@@ -89,7 +89,7 @@
 
 .btn-inicio-sesion{
     width: 400px;
-    height: 52px;
+    line-height: 48px;
     background-color: var(--color-azul-facebook);
     color: var(--color-blanco);
     font-size: 20px;
@@ -113,4 +113,12 @@
     border-radius: 6px;
     border: none;
     transition: all .5s;
+}
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+}
+.content-footer a{
+    background-color: #fff;
 }
