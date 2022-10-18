@@ -3,6 +3,7 @@
     --color-azul-facebook:#1877f2;
     --color-verde-facebook: #42b72a;
     --color-gris-facebook: #f0f2f5;
+    --color-gris-facebook-footer: #737373;
     --color-blanco: #ffffff;
     --color-negro: #000000;
     --color-azul-facebook-hover: #166fe5;
@@ -19,15 +20,13 @@
 
 .contenedor{
     width: 100%;
-    height: 76vh;
+    height: 110vh;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 38%);
     /* repeat(cantidad, tamaño) */
-    grid-column-gap: 32px;
     grid-template-rows: 1fr;
     justify-content: center;
-    align-items: center;
-    
+
 }
 
 .seccion1{
@@ -51,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 70px;
 
     /* 
@@ -61,15 +60,21 @@
     border-radius: 8px ;
     text-align: center; */
 }
+
 .contain-form{
     text-align: center;
     box-shadow: 0 0 8px gray;
     background-color: #fff;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     padding-top: 10px;
     padding-bottom: 24px;
+    margin-bottom: 30px;
 }
+.contain-form div,a{
+    background-color: #fff;
+}
+
 
 .formulario{
     background-color: #fff;
@@ -84,15 +89,17 @@
     border-radius: 6px;
     font-size: 17px;
     padding: 14px 16px;
-    width: 330px;
+    width: 360px;
 }
 
 .btn-inicio-sesion{
-    width: 400px;
+    width: 360px;
     line-height: 48px;
     background-color: var(--color-azul-facebook);
     color: var(--color-blanco);
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     font-weight: bold;
     border-radius: 6px;
     border: none;
@@ -102,6 +109,16 @@
 .btn-inicio-sesion:hover{
     background-color: var(--color-azul-facebook-hover);
 }
+.textDecoration{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    background-color: #f0f2f5;
+}
+.textDecoration1{
+    text-decoration: none;
+    color: #1877f2;
+}
 
 .btn-crear{
     background-color: var(--color-verde-facebook);
@@ -109,16 +126,50 @@
     font-size: 17px;
     font-weight: bold;
     line-height: 43px;
-    padding: 0 24px;
+    padding: 2px 15px;
     border-radius: 6px;
     border: none;
     transition: all .5s;
 }
 .content-footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: #fff;
+    padding-inline: 175px;
+    padding-block: 30px;
 }
 .content-footer a{
     background-color: #fff;
+    padding-right: 15px;
+    font-size: smaller;
+    color: var(--color-gris-facebook-footer);
+    text-decoration: none;
+}
+.content-footer div{
+    background-color: #fff;
+    padding-bottom: 2px;
+    
+}
+.content-footer button{
+    color: var(--color-gris-facebook-footer);
+}
+.separador{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.separador1{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.idiomas{
+    display: flex;
+    flex-direction: row;
+}
+.btnM{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 30px;
+}
+.derechos{
+    padding-top: 15px;
 }
